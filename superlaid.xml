@@ -1,0 +1,12 @@
+<repositories encoding="unicode" version="1.1">
+  <repo priority="50" quality="experimental">
+    <name>superlaid</name>
+    <description>Un overlay moche</description>
+    <homepage>https://github.com/Retidurc/superlaid</homepage>
+    <owner>
+      <email>retidurc@gmail.com</email>
+      <name>Retidurc</name>
+    </owner>
+    <source type="git">https://github.com/Retidurc/superlaid.git</source>
+  </repo>
+</repositories>
