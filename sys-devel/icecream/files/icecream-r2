@@ -22,7 +22,7 @@ start() {
 		touch ${slogfile} && chown icecream:icecream ${slogfile}
 		slogfile=${slogfile:+"-l ${slogfile}"}
 		ebegin "Starting Distributed Compiler Scheduler"
-		start-stop-daemon -u icecream --start --quiet --exec /usr/sbin/icecc-scheduler -- -d ${slogfile} ${netname} ${verbosity}
+		start-stop-daemon -u icecream --start --quiet --exec /usr/local/sbin/icecc-scheduler -- -d ${slogfile} ${netname} ${verbosity}
 		eend ${?}
 	fi
 
