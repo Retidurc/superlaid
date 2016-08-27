@@ -28,7 +28,7 @@ start() {
 
 	[[ ! -d ${basedir} ]] && mkdir -p ${basedir} && chown icecream:icecream ${basedir}
 	ebegin "Starting Distributed Compiler Daemon"
-	start-stop-daemon --start --quiet --exec /usr/sbin/iceccd -- -d ${logfile} ${nice} ${scheduler} ${netname} -u icecream -b "${basedir}" ${maxjobs} ${verbosity}
+	start-stop-daemon --start --quiet --exec /usr/local/sbin/iceccd -- -d ${logfile} ${nice} ${scheduler} ${netname} -u icecream -b "${basedir}" ${maxjobs} ${verbosity}
 	eend ${?}
 }
 
